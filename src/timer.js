@@ -43,7 +43,11 @@ class Timer extends Component {
         // This will give a number with one digit after the decimal dot (xx.x):
         var seconds = (elapsed / 10).toFixed(1);    
         return (
-            <p>This example was started <b>{seconds} seconds</b> ago.</p>
+            <div>
+                <p>This example was started <b>{seconds} seconds</b> ago.</p>
+                <button>Start</button>
+                <button>Stop</button>                
+            </div>                    
         );
     }
 }
